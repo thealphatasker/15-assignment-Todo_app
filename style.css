@@ -70,6 +70,7 @@ hr {
   background-color: rgb(189, 209, 247);
   cursor: pointer;
   color: red;
+  transition: all 0.2s;
 }
 
 .showResult {
