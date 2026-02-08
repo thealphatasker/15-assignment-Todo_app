@@ -1,0 +1,73 @@
+body {
+  background-color: antiquewhite;
+}
+
+.headingdiv {
+  background-color: rgb(125, 192, 194);
+  border: none;
+  border-radius: 100px;
+  padding: 5px 5px;
+  margin: 5px 5px 20px 5px;
+
+  font-size: 18px;
+  text-align: center;
+}
+
+#mainheading {
+  font-family: "BBH Bartle", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+#main-para {
+  font-style: italic;
+  font-family: "Playwrite NZ Basic", cursive;
+  color: white;
+}
+
+hr {
+  width: 290px;
+}
+.main-form {
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 20px;
+}
+
+#userInput {
+  border: 2px groove black;
+  border-radius: 10px;
+  height: 30px;
+  width: 400px;
+  background-color: beige;
+
+  font-size: 20px;
+}
+
+#userInput:focus {
+  background-color: rgb(228, 228, 224);
+  color: black;
+  transition: all 0.3s;
+  height: 35px;
+  width: 450px;
+}
+
+.form-btn {
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  width: 180px;
+  margin: 15px 15px 15px 15px;
+  color: rgb(37, 33, 54);
+}
+
+.form-btn:hover {
+  background-color: rgb(189, 209, 247);
+  cursor: pointer;
+  color: red;
+}

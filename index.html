@@ -3,11 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=BBH+Bartle&family=Changa+One:ital@0;1&family=Lobster&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sekuya&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Todo App</title>
   </head>
   <body>
+    <div class="main-div">
+      <div class="headingdiv">
+        <h1 id="mainheading">Todo App</h1>
+        <p id="main-para">
+          A lightweight tool to help you track your daily goals and stay on top
+          of your schedule.
+        </p>
 
-    
+        <hr />
+        <br />
 
+        <form
+          class="main-form"
+          onsubmit="
+            addTask();
+            return false;
+          "
+        >
+          <label for="userInput">Enter your Task: </label>
+          <input
+            type="text"
+            id="userInput"
+            placeholder="e.g. Setup 2FA"
+            required
+          />
+          <br />
+          <button class="form-btn" type="submit">➕ Add this Task</button>
+        </form>
+      </div>
+      <ol class="theResult"></ol>
+    </div>
+
+    <!-- JS CODE -->
+    <script>
+      function addTask() {
+        const taskText = document.querySelector("#userInput").value;
+        const resultBox = document.querySelector(".theResult");
+
+        resultBox.innerHTML = resultBox.innerHTML + "<li>" + taskText + "</li>";
+
+        document.querySelector("#userInput").value = "";
+      }
+    </script>
   </body>
 </html>
