@@ -46,16 +46,19 @@
           <button class="form-btn" type="submit">➕ Add this Task</button>
         </form>
       </div>
-      <ol class="theResult"></ol>
+      <div class="showResult">
+        <p id="task-para">📋 Your Tasks:</p>
+        <ol id="theResult"></ol>
+      </div>
     </div>
 
     <!-- JS CODE -->
     <script>
       function addTask() {
         const taskText = document.querySelector("#userInput").value;
-        const resultBox = document.querySelector(".theResult");
+        const resultBox = document.querySelector("#theResult");
 
-        resultBox.innerHTML = resultBox.innerHTML + "<li>" + taskText + "</li>";
+        resultBox.innerHTML = resultBox.innerHTML + `<li> ${taskText} </li>`;
 
         document.querySelector("#userInput").value = "";
       }

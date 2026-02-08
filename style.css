@@ -5,7 +5,7 @@ body {
 .headingdiv {
   background-color: rgb(125, 192, 194);
   border: none;
-  border-radius: 100px;
+  border-radius: 70px;
   padding: 5px 5px;
   margin: 5px 5px 20px 5px;
 
@@ -43,7 +43,7 @@ hr {
   border: 2px groove black;
   border-radius: 10px;
   height: 30px;
-  width: 400px;
+  width: 250px;
   background-color: beige;
 
   font-size: 20px;
@@ -54,7 +54,7 @@ hr {
   color: black;
   transition: all 0.3s;
   height: 35px;
-  width: 450px;
+  width: 350px;
 }
 
 .form-btn {
@@ -70,4 +70,24 @@ hr {
   background-color: rgb(189, 209, 247);
   cursor: pointer;
   color: red;
+}
+
+.showResult {
+  border: 3px rgb(248, 229, 229) groove;
+  background-color: rgb(218, 233, 247);
+  width: 500px;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 20px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+}
+
+#task-para {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
 }
